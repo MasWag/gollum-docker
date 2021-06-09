@@ -6,7 +6,7 @@ RUN apt-get -y update \
     && apt-get -y install libicu-dev cmake \
     && rm -rf /var/lib/apt/lists/*
 
-RUN gem install therubyracer gollum
+RUN gem install therubyracer gollum org-ruby
 
 RUN apt-get -y purge libicu-dev cmake
 
