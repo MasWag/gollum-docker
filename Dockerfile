@@ -3,7 +3,7 @@ ARG BASE_IMAGE=ruby:2.7
 FROM ${BASE_IMAGE}
 
 RUN apt-get -y update \
-    && apt-get -y install libicu-dev cmake \
+    && apt-get -y install libicu-dev cmake libssh2-1-dev\
     && rm -rf /var/lib/apt/lists/*
 
 RUN gem install therubyracer gollum org-ruby
